@@ -16,7 +16,17 @@
         }
     </script>
     <style>
-        .hero-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%); }
+        .hero-immersive {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-immersive::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(0, 71, 171, 0.7) 100%);
+        }
         .footer-bg { background: #0A2540; }
         .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
         .nav-link:hover { color: #0047AB; }
@@ -44,9 +54,12 @@
     </div>
 </header>
 
-<section class="hero-gradient text-primary-dark py-16 text-center border-b border-border-light">
-    <h1 class="text-4xl md:text-5xl font-black mb-4">精诚服务，交付卓越</h1>
-    <p class="text-gray-500">从咨询规划到落地运营，全生命周期保障您的数字化转型</p>
+<!-- PAGE HERO -->
+<section class="hero-immersive py-32 relative overflow-hidden" style="background-image: url('https://picsum.photos/seed/zhiyun-service/1920/800');">
+    <div class="max-w-7xl mx-auto px-12 relative z-10 text-center">
+        <h1 class="text-4xl md:text-5xl font-black mb-4 text-white">精诚服务，交付卓越</h1>
+        <p class="text-blue-100 text-lg md:text-xl font-medium">从咨询规划到落地运营，全生命周期保障您的数字化转型</p>
+    </div>
 </section>
 
 <!-- SERVICE LIFECYCLE -->
@@ -144,7 +157,7 @@
         <h2 class="text-4xl font-black mb-8 leading-tight">准备好开启数字化升级了吗？</h2>
         <p class="text-blue-100 mb-12">联系智耘专家，我们将为您定制最适合的软硬件配套方案。</p>
         <div class="flex flex-wrap justify-center gap-6">
-            <a href="tel:02766789900" class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition shadow-xl">拔打电话咨询服务</a>
+            <a href="tel:027-66789900" class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition shadow-xl">拔打电话咨询服务</a>
             <button class="bg-primary-dark text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg hover:bg-black/20 transition">在线留言预约</button>
         </div>
     </div>
