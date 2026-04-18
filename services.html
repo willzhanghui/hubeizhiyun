@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一站式服务 - 智耘科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0047AB', accent: '#00D1FF', 'section-gray': '#F8F9FA', 'primary-dark': '#0A2540', 'border-light': '#E1E8ED' },
+                    fontFamily: { sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%); }
+        .footer-bg { background: #0A2540; }
+        .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
+        .nav-link:hover { color: #0047AB; }
+        .nav-active { color: #0047AB; border-bottom-width: 2px; border-color: #0047AB; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 w-full flex items-center justify-between h-full">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-lg">ZY</div>
+            <span class="text-2xl font-extrabold text-primary tracking-tight">湖北智耘科技</span>
+        </a>
+        <nav class="hidden md:flex gap-8 h-full">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="business.html" class="nav-link">业务板块</a>
+            <a href="products.html" class="nav-link">产品技术</a>
+            <a href="services.html" class="nav-link nav-active">一站式服务</a>
+            <a href="about.html" class="nav-link">关于我们</a>
+            <a href="news.html" class="nav-link">新闻动态</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded font-semibold text-sm hover:opacity-90 transition">立即咨询</button>
+    </div>
+</header>
+
+<section class="hero-gradient text-primary-dark py-16 text-center border-b border-border-light">
+    <h1 class="text-4xl md:text-5xl font-black mb-4">精诚服务，交付卓越</h1>
+    <p class="text-gray-500">从咨询规划到落地运营，全生命周期保障您的数字化转型</p>
+</section>
+
+<!-- SERVICE LIFECYCLE -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black mb-16">一站式全生命周期服务体系</h2>
+        <div class="relative overflow-hidden md:flex justify-between items-start gap-12">
+            <!-- 1. Planning -->
+            <div class="flex-1 mb-12 md:mb-0 relative z-10">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-black mb-6 border-4 border-blue-100 italic">01</div>
+                <h4 class="text-lg font-bold mb-4">咨询规划</h4>
+                <p class="text-xs text-gray-400 leading-normal mb-4">提供行业数字化战略解读与信息化顶层设计方案咨询。</p>
+                <div class="h-1px bg-gray-200 w-full mb-4"></div>
+                <ul class="text-[10px] text-gray-400 space-y-2 font-bold tracking-widest">
+                    <li>需求深度调研</li>
+                    <li>可行性方案论证</li>
+                    <li>技术标准建立</li>
+                </ul>
+            </div>
+            <!-- 2. Implementation -->
+            <div class="flex-1 mb-12 md:mb-0 relative z-10">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-black mb-6 border-4 border-blue-100 italic">02</div>
+                <h4 class="text-lg font-bold mb-4">交付建设</h4>
+                <p class="text-xs text-gray-400 leading-normal mb-4">专业开发团队高效敏捷开发，传感器硬件精准配套与环境调试。</p>
+                <div class="h-1px bg-gray-200 w-full mb-4"></div>
+                <ul class="text-[10px] text-gray-400 space-y-2 font-bold tracking-widest">
+                    <li>核心系统研发</li>
+                    <li>硬件集成安装</li>
+                    <li>系统全链调测</li>
+                </ul>
+            </div>
+            <!-- 3. Operation -->
+            <div class="flex-1 relative z-10">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-black mb-6 border-4 border-blue-100 italic">03</div>
+                <h4 class="text-lg font-bold mb-4">运维支撑</h4>
+                <p class="text-xs text-gray-400 leading-normal mb-4">7*24小时全时响应，保障核心业务系统稳定运行与功能迭代。</p>
+                <div class="h-1px bg-gray-200 w-full mb-4"></div>
+                <ul class="text-[10px] text-gray-400 space-y-2 font-bold tracking-widest">
+                    <li>故障快速响应</li>
+                    <li>系统安全加固</li>
+                    <li>软硬件常态巡查</li>
+                </ul>
+            </div>
+            <!-- Decorative line -->
+            <div class="hidden md:block absolute top-8 left-0 w-full h-1px bg-gradient-to-r from-transparent via-blue-100 to-transparent -z-10"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECT CASE PREVIEW -->
+<section class="py-24 bg-section-gray">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black">标杆项目案例</h2>
+            <p class="text-gray-400 mt-4 text-sm font-bold uppercase tracking-widest">Successful Project Showcase</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-[32px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
+                <div class="aspect-video bg-gray-200 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-primary opacity-20 group-hover:opacity-0 transition-opacity"></div>
+                    <div class="w-full h-full p-12 flex items-center justify-center italic text-primary font-black text-2xl">安陆标杆农田项目</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase rounded-full">智慧农业</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[10px] text-gray-400 font-bold uppercase">安陆市农业农村局</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">安陆市高标准农田信息化建设项目</h4>
+                    <p class="text-sm text-gray-500 leading-loose">覆盖辛榨乡6个行政村，共设置13个系统模块、231项功能点。实现了辖区农田24小时自动采集、实时上传与数据驱动的决策支持。</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-[32px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
+                <div class="aspect-video bg-gray-200 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-primary opacity-20 group-hover:opacity-0 transition-opacity"></div>
+                    <div class="w-full h-full p-12 flex items-center justify-center italic text-primary font-black text-2xl">省博数字化运维</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded-full">智慧文博</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[10px] text-gray-400 font-bold uppercase">湖北省博物馆</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">湖北省博物馆核心系统运维项目</h4>
+                    <p class="text-sm text-gray-500 leading-loose">为湖北省博物馆提供全方位的系统软件运维与数据管理服务。结合物联网监测技术，保障了馆藏珍贵文物环境参数的实时准确性与系统稳定性。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary py-24 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-black mb-8 leading-tight">准备好开启数字化升级了吗？</h2>
+        <p class="text-blue-100 mb-12">联系智耘专家，我们将为您定制最适合的软硬件配套方案。</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="tel:02766789900" class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition shadow-xl">拔打电话咨询服务</a>
+            <button class="bg-primary-dark text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg hover:bg-black/20 transition">在线留言预约</button>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

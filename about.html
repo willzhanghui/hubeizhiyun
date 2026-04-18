@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于智耘 - 湖北智耘信息技术有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0047AB',
+                        'primary-dark': '#0A2540',
+                        'primary-light': '#00D1FF',
+                        accent: '#00D1FF',
+                        'section-gray': '#F8F9FA',
+                        'border-light': '#E1E8ED',
+                    },
+                    fontFamily: {
+                        sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%);
+        }
+        .footer-bg { background: #0A2540; }
+        .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
+        .nav-link:hover { color: #0047AB; }
+        .nav-active { color: #0047AB; border-bottom-width: 2px; border-color: #0047AB; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 flex items-center justify-between h-full">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
+                <span class="text-white font-bold text-lg">ZY</span>
+            </div>
+            <span class="text-2xl font-extrabold text-primary tracking-tight">湖北智耘科技</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 h-full">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="business.html" class="nav-link">业务板块</a>
+            <a href="products.html" class="nav-link">产品技术</a>
+            <a href="services.html" class="nav-link">一站式服务</a>
+            <a href="about.html" class="nav-link nav-active">关于我们</a>
+            <a href="news.html" class="nav-link">新闻动态</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="bg-primary text-white px-6 py-2 rounded font-semibold text-sm hover:opacity-90 transition">联系我们</button>
+        </div>
+    </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="hero-gradient text-primary-dark py-16 relative overflow-hidden border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 relative z-10 text-center">
+        <h1 class="text-4xl md:text-5xl font-black mb-4">关于智耘科技</h1>
+        <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto">领先的行业数字化替代与智能管控解决方案服务商</p>
+    </div>
+</section>
+
+<!-- COMPANY INTRO -->
+<section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-accent font-bold uppercase tracking-widest text-xs mb-4 block">Company Introduction</span>
+                <h2 class="text-3xl font-black text-primary-dark mb-8 leading-tight">专注行业信息化与数字化转型</h2>
+                <div class="space-y-6 text-gray-500 text-sm md:text-base leading-loose">
+                    <p>
+                        湖北智耘信息技术有限公司是一家专注于行业信息化与数字化转型的高新技术企业。我们致力于为各级政府部门、新型经营主体、现代产业园区提供全方位的数字化替代与智能管控解决方案。
+                    </p>
+                    <p>
+                        公司以“让科技服务产业、让数据创造价值”为使命，深度融合物联网（IoT）、大数据、人工智能（AI）、北斗导航等前沿技术，打造覆盖生产管理全过程的智能化平台。
+                    </p>
+                    <p>
+                        智耘科技核心团队拥有丰富的行业信息化项目经验，先后承担了多个省、市级重点信息化建设项目，在农田数字化管理、文物预防性保护、智慧景区管控等领域积累了深厚的技术沉淀。
+                    </p>
+                    <p>
+                        我们的愿景是通过持续的技术创新，助力传统产业实现从“数字化”向“智能化”的跨越发展，为数字中国建设贡献力量。
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-gray-100 rounded-3xl overflow-hidden aspect-square relative z-10">
+                   <!-- Map or Office Image placeholder -->
+                   <div class="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center p-12">
+                       <svg viewBox="0 0 100 100" class="w-full h-full text-primary/20">
+                           <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.5" />
+                           <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="0.5" />
+                           <path d="M50 10 L50 90 M10 50 L90 50" stroke="currentColor" stroke-width="0.5" />
+                           <circle cx="50" cy="50" r="4" fill="currentColor" />
+                       </svg>
+                   </div>
+                </div>
+                <!-- Float card -->
+                <div class="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl shadow-xl z-20 max-w-xs border border-gray-50">
+                    <div class="text-primary font-black text-4xl mb-2">1,000<span class="text-xl">万</span></div>
+                    <div class="text-xs text-gray-400 font-bold uppercase tracking-widest">注册资本 (RMB)</div>
+                </div>
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VALUES -->
+<section class="py-24 bg-section-gray">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black text-primary-dark mb-4">企业核心价值观</h2>
+            <div class="w-16 h-1 bg-accent mx-auto mb-6"></div>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-primary">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <h4 class="font-bold mb-4 text-primary-dark">远见卓识</h4>
+                <p class="text-xs text-gray-400 leading-loose">以前瞻性的行业洞察力，预见客户未来的数字化需求。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-primary">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+                </div>
+                <h4 class="font-bold mb-4 text-primary-dark">极致创新</h4>
+                <p class="text-xs text-gray-400 leading-loose">不断突破技术边界，为每一个应用场景打造差异化优势。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-primary">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                </div>
+                <h4 class="font-bold mb-4 text-primary-dark">深度协同</h4>
+                <p class="text-xs text-gray-400 leading-loose">打破信息孤岛，构建开放、互联、共赢的数字生态系统。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-primary">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.9L10 .3l7.834 4.6a1 1 0 01.5 1.2l-1.35 4.7c.48.26.841.7 1.016 1.23a4.015 4.015 0 01-5.748 4.74l-.946 2.08a1 1 0 01-1.812 0l-.946-2.08a4.015 4.015 0 01-5.748-4.74c.175-.53.536-.97 1.016-1.23L2.833 6.1a1 1 0 01.5-1.2l-1.167-1.167A1 1 0 012.166 4.9zm1.758 1.4L4.92 9.7l3.702 2.1c.333.19.467.59.333.95a2.008 2.008 0 002.872 2.37l.454-1.01a1 1 0 011.815 0l.454 1.01a2.008 2.008 0 002.872-2.37c-.133-.36 0-.76.333-.95l3.702-2.1 1.004-3.4L10 2.2 3.924 6.3z" clip-rule="evenodd"/></svg>
+                </div>
+                <h4 class="font-bold mb-4 text-primary-dark">安全可靠</h4>
+                <p class="text-xs text-gray-400 leading-loose">严格遵循标准规范，全流程闭环审计，守护客户数据资产。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HISTORY -->
+<section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black text-primary-dark mb-4">智耘足迹</h2>
+            <div class="w-16 h-1 bg-accent mx-auto mb-6"></div>
+        </div>
+        
+        <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-200 before:to-transparent">
+            <!-- 2026 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-50 text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-black text-primary text-xl">2026</div>
+                    </div>
+                    <div class="text-gray-500 text-xs leading-loose">
+                        正式发布智慧农业 2.0 平台，深度整合“空天地”一体化监测网络，核心业务在湖北省内实现多地市规模化落地。
+                    </div>
+                </div>
+            </div>
+            <!-- 2025 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-50 text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <div class="w-2.5 h-2.5 rounded-full bg-primary/40"></div>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-black text-primary/60 text-xl">2025</div>
+                    </div>
+                    <div class="text-gray-500 text-xs leading-loose">
+                        中标湖北省农业农村厅、湖北省文物局等多个核心部、省项目，确立了在智慧农业与文博信息化领域的市场标杆地位。
+                    </div>
+                </div>
+            </div>
+            <!-- 2024 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-50 text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <div class="w-2.5 h-2.5 rounded-full bg-primary/20"></div>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-black text-primary/40 text-xl">2024</div>
+                    </div>
+                    <div class="text-gray-500 text-xs leading-loose">
+                        7月，公司在武汉正式成立。由资深行业专家团队领衔，开启了专注产业数字化赋能的创业征程。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER (Sync with index.html) -->
+<footer class="footer-bg pt-20 pb-10 text-gray-400 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Footer Content same as index -->
+        <div class="grid md:grid-cols-12 gap-12 mb-16">
+            <div class="md:col-span-4">
+                <a href="index.html" class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">ZY</span>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">智耘科技</span>
+                </a>
+                <p class="text-sm leading-loose mb-8">
+                    湖北智耘信息技术有限公司是一家专注于行业信息化与数字化转型的领军科技企业。我们致力于通过前沿技术连接产业，为智慧农业、智慧文博、智慧文旅提供闭环式解决方案。
+                </p>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">业务导航</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="business.html" class="hover:text-primary transition">智慧农业</a></li>
+                    <li><a href="business.html" class="hover:text-primary transition">智慧文博</a></li>
+                    <li><a href="business.html" class="hover:text-primary transition">智慧文旅</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-6 flex flex-col items-end">
+                <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">总部地址</h4>
+                <p class="text-sm text-right leading-loose">
+                    湖北省武汉市武昌区南湖大道与秦园路交汇处<br/>
+                    轨道交通7号线秦园路风塔二期项目前程中心17层03-07号<br/>
+                    联系电话: 027-66789900 | 邮箱: contact@hbzhiyun.com
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-white/5 pt-10 text-center text-xs">
+            <p>Copyright © 2024-2026 湖北智耘信息技术有限公司 版权所有 | 鄂ICP备2025000000号</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

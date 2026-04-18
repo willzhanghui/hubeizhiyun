@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻动态 - 智耘科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0047AB', accent: '#00D1FF', 'section-gray': '#F8F9FA', 'primary-dark': '#0A2540', 'border-light': '#E1E8ED' },
+                    fontFamily: { sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%); }
+        .footer-bg { background: #0A2540; }
+        .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
+        .nav-link:hover { color: #0047AB; }
+        .nav-active { color: #0047AB; border-bottom-width: 2px; border-color: #0047AB; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 w-full flex items-center justify-between h-full">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-lg">ZY</div>
+            <span class="text-2xl font-extrabold text-primary tracking-tight">湖北智耘科技</span>
+        </a>
+        <nav class="hidden md:flex gap-8 h-full">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="business.html" class="nav-link">业务板块</a>
+            <a href="products.html" class="nav-link">产品技术</a>
+            <a href="services.html" class="nav-link">一站式服务</a>
+            <a href="about.html" class="nav-link">关于我们</a>
+            <a href="news.html" class="nav-link nav-active">新闻动态</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded font-semibold text-sm">媒体预约</button>
+    </div>
+</header>
+
+<section class="hero-gradient text-primary-dark py-16 text-center border-b border-border-light">
+    <h1 class="text-4xl font-black mb-4">新闻中心</h1>
+    <p class="text-gray-500 italic">智耘动态与行业观察</p>
+</section>
+
+<!-- NEWS LIST -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16">
+        <div class="md:col-span-8 space-y-16">
+            <!-- News 1 -->
+            <article class="flex flex-col md:flex-row gap-8 items-start group">
+                <div class="w-full md:w-64 aspect-[4/3] bg-gray-100 rounded-3xl overflow-hidden shrink-0 transition-transform group-hover:scale-105 duration-500 flex items-center justify-center italic text-primary font-black text-xs text-center p-4">中标喜讯：湖北省农业农村厅数据处理项目</div>
+                <div>
+                    <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-primary mb-4">
+                        <span>2025-12-16</span>
+                        <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                        <span>公司要闻</span>
+                    </div>
+                    <h2 class="text-2xl font-black text-[#001a4d] mb-4 hover:text-primary transition-colors cursor-pointer leading-tight">正式签署！湖北智耘成功中标湖北省农业农村厅“高标准农田数据处理”服务项目</h2>
+                    <p class="text-sm text-gray-500 leading-loose mb-6">近日，湖北智耘信息技术有限公司凭借扎实的数据分析能力与行业深耕经验，正式收到中标通知。此次合作将聚焦省内高标准农田的数字化底层架构与海量农情数据的综合集成处理...</p>
+                    <a href="news-detail.html" class="text-sm font-black text-primary border-b-2 border-primary pb-1">阅读全文 →</a>
+                </div>
+            </article>
+
+            <!-- News 2 -->
+             <article class="flex flex-col md:flex-row gap-8 items-start group">
+                <div class="w-full md:w-64 aspect-[4/3] bg-gray-100 rounded-3xl overflow-hidden shrink-0 transition-transform group-hover:scale-105 duration-500 flex items-center justify-center italic text-primary font-black text-xs text-center p-4">软著突破：累计授权软著数破百件</div>
+                <div>
+                    <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-primary mb-4">
+                        <span>2025-09-30</span>
+                        <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                        <span>行业荣誉</span>
+                    </div>
+                    <h2 class="text-2xl font-black text-[#001a4d] mb-4 hover:text-primary transition-colors cursor-pointer leading-tight">创新赋能！智耘科技核心技术研发再上新台阶，累计获得软件著作权证书超百件</h2>
+                    <p class="text-sm text-gray-500 leading-loose mb-6">截止目前，公司已成功获得包括“智能农机调度系统”、“文物环境实时监测平台”等在内的102项软件著作权登记证书。多项核心技术的授权标志着公司在知识产权保护与自主创新领域已迈入行业第一梯队...</p>
+                    <a href="news-detail.html" class="text-sm font-black text-primary border-b-2 border-primary pb-1">阅读全文 →</a>
+                </div>
+            </article>
+
+            <!-- News 3 -->
+             <article class="flex flex-col md:flex-row gap-8 items-start group">
+                <div class="w-full md:w-64 aspect-[4/3] bg-gray-100 rounded-3xl overflow-hidden shrink-0 transition-transform group-hover:scale-105 duration-500 flex items-center justify-center italic text-primary font-black text-xs text-center p-4">项目落成：安陆标杆项目顺利验收</div>
+                <div>
+                    <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-primary mb-4">
+                        <span>2025-06-15</span>
+                        <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                        <span>项目案例</span>
+                    </div>
+                    <h2 class="text-2xl font-black text-[#001a4d] mb-4 hover:text-primary transition-colors cursor-pointer leading-tight">标杆驱动！安陆市信息化集成管理平台顺利通过农业部门专家组阶段性验收</h2>
+                    <p class="text-sm text-gray-500 leading-loose mb-6">安陆市辛榨乡高标准农田项目现场，由智耘科技建设的智慧农业指挥中心大幕缓缓开启。专家组对系统在实时墒情监测、北斗精准播种、病虫害自动预警等模块的稳定性给与了高度评价...</p>
+                    <a href="news-detail.html" class="text-sm font-black text-primary border-b-2 border-primary pb-1">阅读全文 →</a>
+                </div>
+            </article>
+        </div>
+
+        <aside class="md:col-span-4 space-y-12">
+            <div class="bg-gray-50 p-10 rounded-[40px] border border-gray-100">
+                <h4 class="font-bold text-lg mb-8 text-[#001a4d]">焦点分类</h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white text-xs font-bold rounded-full border border-gray-100 cursor-pointer hover:bg-primary hover:text-white transition">企业要闻 (12)</span>
+                    <span class="px-4 py-2 bg-white text-xs font-bold rounded-full border border-gray-100 cursor-pointer hover:bg-primary hover:text-white transition">行业观察 (28)</span>
+                    <span class="px-4 py-2 bg-white text-xs font-bold rounded-full border border-gray-100 cursor-pointer hover:bg-primary hover:text-white transition">研发动态 (15)</span>
+                    <span class="px-4 py-2 bg-white text-xs font-bold rounded-full border border-gray-100 cursor-pointer hover:bg-primary hover:text-white transition">近期中标 (5)</span>
+                </div>
+            </div>
+            <div class="bg-primary p-10 rounded-[40px] text-white">
+                <h4 class="font-bold text-lg mb-6">订阅智耘视点</h4>
+                <p class="text-xs text-blue-100 leading-loose mb-8 italic">获取行业数字化替代最新趋势及公司重大合作进展。</p>
+                <div class="flex">
+                    <input type="text" placeholder="输入您的邮箱地址" class="bg-white/10 border border-white/20 px-4 py-2 rounded-l-lg text-xs w-full focus:outline-none" />
+                    <button class="bg-white text-primary px-4 py-2 rounded-r-lg text-xs font-bold">订阅</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white py-10 text-gray-400 border-t border-gray-100 text-center text-[10px] font-bold tracking-widest uppercase">
+    湖北智耘信息技术有限公司 | Hubei Zhiyun Technology
+</footer>
+
+</body>
+</html>

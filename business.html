@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>业务板块 - 智慧农业 | 智慧文博 | 智慧文旅 - 智耘科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0047AB',
+                        'primary-dark': '#0A2540',
+                        'primary-light': '#00D1FF',
+                        accent: '#00D1FF',
+                        'section-gray': '#F8F9FA',
+                        'border-light': '#E1E8ED',
+                    },
+                    fontFamily: { sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%); }
+        .footer-bg { background: #0A2540; }
+        .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
+        .nav-link:hover { color: #0047AB; }
+        .nav-active { color: #0047AB; border-bottom-width: 2px; border-color: #0047AB; }
+        .ag-card { border-left: 4px solid #0047AB; }
+        .mb-card { border-left: 4px solid #0047AB; }
+        .ly-card { border-left: 4px solid #0047AB; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 flex items-center justify-between h-full">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-lg">ZY</div>
+            <span class="text-2xl font-extrabold text-primary tracking-tight">湖北智耘科技</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 h-full">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="business.html" class="nav-link nav-active">业务板块</a>
+            <a href="products.html" class="nav-link">产品技术</a>
+            <a href="services.html" class="nav-link">一站式服务</a>
+            <a href="about.html" class="nav-link">关于我们</a>
+            <a href="news.html" class="nav-link">新闻动态</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded font-semibold text-sm hover:opacity-90 transition">立即咨询</button>
+    </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="hero-gradient text-primary-dark py-16 text-center border-b border-border-light">
+    <h1 class="text-4xl md:text-5xl font-black mb-4">核心业务板块</h1>
+    <p class="text-gray-500 text-sm md:text-base">聚焦前沿科技，深耕行业垂直领域</p>
+</section>
+
+<!-- NAVIGATION ANCHORS -->
+<div class="sticky top-20 bg-white border-b border-gray-100 z-40 py-4 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 flex justify-center gap-8 md:gap-16 text-sm font-bold text-gray-400">
+        <a href="#agriculture" class="hover:text-primary transition flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> 智慧农业</a>
+        <a href="#museum" class="hover:text-primary transition flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> 智慧文博</a>
+        <a href="#tourism" class="hover:text-primary transition flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span> 智慧文旅</a>
+    </div>
+</div>
+
+<!-- AGRICULTURE SECTION -->
+<section id="agriculture" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="md:w-1/3 sticky top-36">
+                <span class="text-green-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Agriculture</span>
+                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧农业综合方案</h2>
+                <p class="text-gray-500 text-sm leading-loose mb-8">
+                    面向高标准农田建设与管理的生命周期，提供从数据采集、分析处理到决策支持的一站式信息化解决方案。助力农业生产从“经验判断”向“科学决策”转化。
+                </p>
+                <div class="bg-green-50 p-6 rounded-2xl">
+                    <h5 class="font-bold text-green-800 text-sm mb-4">四大核心优势</h5>
+                    <ul class="space-y-3 text-xs text-green-700">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 高精度：北斗厘米级农机作业</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 全覆盖：空天地一体化实时监测</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 低耗：精准灌溉与减药增效</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 闭环：种子到餐桌的全链条溯源</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="md:w-2/3 grid gap-6">
+                <!-- Systems from PDF -->
+                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">现代农业园区管理系统</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        以数据驾驶舱为核心，整合园区概览、四情监测（气象/虫情/墒情/苗情）、作物长势遥感监测。支持NDVI植被指数分析、生育期智能判断。
+                    </p>
+                </div>
+                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">智能无人农机管理系统</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        基于北斗/GPS高精度定位，实现农机作业路径规划、无人驾驶任务编排、作业面积自动计算、工况实时监测与远程控制。
+                    </p>
+                </div>
+                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">农事生产与溯源管理系统</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        覆盖全生命周期的农事档案、任务闭环、批次追溯。关联从种子采购、田间管理到包装销售的每一个环节，实现“扫码即查”。
+                    </p>
+                </div>
+                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">农业大数据分析与咨询服务</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        汇聚土壤、气象等多源异构数据，提供肥力分级、气象历史对比、农技知识库在线问答等深度分析能力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MUSEUM SECTION -->
+<section id="museum" class="py-24 bg-section-gray">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row-reverse gap-16 items-start">
+            <div class="md:w-1/3 sticky top-36">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Museum</span>
+                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧文博解决方案</h2>
+                <p class="text-gray-500 text-sm leading-loose mb-8">
+                    聚焦文物“预防性保护”与“数字化传播”。通过IoT物联网实时监控库房环境，利用数字孪生技术实现文化遗产的永恒在线。
+                </p>
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-blue-600 rounded-lg text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/></svg>
+                        </div>
+                        <h5 class="font-bold text-blue-800 text-sm text-left">标杆案例</h5>
+                    </div>
+                    <p class="text-xs text-blue-700 leading-loose">
+                        我们已成功为<span class="font-bold">湖北省博物馆</span>、<span class="font-bold">湖北省文物局</span>提供软件运维服务及文物数据库管理系统，保障数万件国家级文物的数据安全与环境监测。
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-2/3 grid gap-6">
+                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">文物预测性保护监控平台</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        针对库房与展柜的温湿度、二氧化碳、光照强度进行实时颗粒化监测。出现异常自动告警，确保文物处于动态恒定的最适宜环境。
+                    </p>
+                </div>
+                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">3D数字化采集与虚拟展览</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        采用高精度点云扫描，建立精细的文物三维模型。支持在线沉浸式云看展、AR增强现实导览，让珍贵文物活起来、火起来。
+                    </p>
+                </div>
+                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">博物馆智慧票务与客流管控</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        融合全渠道分时预约预约、人脸识别闸机与客流热力图分析。实现场馆负载能力预警，大幅提升公众参观体验。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TOURISM SECTION -->
+<section id="tourism" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="md:w-1/3 sticky top-36">
+                <span class="text-orange-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Culture & Tourism</span>
+                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧文旅解决方案</h2>
+                <p class="text-gray-500 text-sm leading-loose mb-8">
+                    构建全域旅游数字化综合管理服务平台。解决景区“看不住、管不好、卖不响”的痛点，打造沉浸式智慧旅游新地标。
+                </p>
+            </div>
+            <div class="md:w-2/3 grid gap-6">
+                <div class="ly-card bg-orange-50/30 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">景区大数据指挥调度中心</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        整合监控视频、GIS地图、应急调度、停车诱导、火情监测于一体的“全景式”大屏看板。支持一键广播、远程巡更。
+                    </p>
+                </div>
+                <div class="ly-card bg-orange-50/30 p-8 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">一机游全域智旅平台</h4>
+                    <p class="text-sm text-gray-500 leading-loose">
+                        赋能B端景区与C端游客。包含攻略导览、扫码购票、智能客服、评价反馈。通过数据漏斗分析游客画像，实现精准营销。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-bg pt-10 pb-10 text-gray-400 text-center text-xs">
+    <p>湖北智耘信息技术有限公司 | 联系电话: 027-66789900 | 武汉前程中心17层</p>
+    <p class="mt-4 opacity-50">Copyright © 2024-2026 湖北智耘科技 版权所有</p>
+</footer>
+
+</body>
+</html>

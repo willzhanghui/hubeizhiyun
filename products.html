@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品技术 - 智耘科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0047AB', accent: '#00D1FF', 'section-gray': '#F8F9FA', 'primary-dark': '#0A2540', 'border-light': '#E1E8ED' },
+                    fontFamily: { sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%); }
+        .nav-link { font-size: 15px; font-weight: 500; padding: 1.5rem 0; transition-property: color; transition-duration: 300ms; color: #0A2540; text-decoration: none; }
+        .nav-link:hover { color: #0047AB; }
+        .nav-active { color: #0047AB; border-bottom-width: 2px; border-color: #0047AB; }
+        .footer-bg { background: #0A2540; }
+        .product-card { border: 1px solid #E1E8ED; transition: all 0.3s; }
+        .product-card:hover { border-color: #0047AB; background-color: #F0F7FF; transform: scale(1.02); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-12 w-full flex items-center justify-between h-full">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-lg">ZY</div>
+            <span class="text-2xl font-extrabold text-primary tracking-tight">湖北智耘科技</span>
+        </a>
+        <nav class="hidden md:flex gap-8 h-full">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="business.html" class="nav-link">业务板块</a>
+            <a href="products.html" class="nav-link nav-active">产品技术</a>
+            <a href="services.html" class="nav-link">一站式服务</a>
+            <a href="about.html" class="nav-link">关于我们</a>
+            <a href="news.html" class="nav-link">新闻动态</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded font-semibold text-sm hover:opacity-90 transition">产品咨询</button>
+    </div>
+</header>
+
+<section class="hero-gradient text-primary-dark py-16 text-center border-b border-border-light">
+    <h1 class="text-4xl font-black mb-4">产品中心与核心技术</h1>
+    <p class="text-gray-500 italic">感知万物，数动未来</p>
+</section>
+
+<!-- HARDWARE TERMINALS -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl font-bold text-primary-dark">智能硬件感知体系</h2>
+            <p class="text-gray-400 text-sm mt-2">覆盖“田、馆、园”的全场景物联接入设备</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <!-- 10 Terminal Types from PDF -->
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                </div>
+                <div class="font-bold text-sm">田间气象站</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.722 2.166a2 2 0 001.022.547l2.387.477a2 2 0 001.96-1.414l.722-2.166zM15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div class="font-bold text-sm">土壤温湿度计</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <div class="font-bold text-sm">虫情测报灯</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="font-bold text-sm">监控球机</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                </div>
+                <div class="font-bold text-sm">农用遥感无人机</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+                </div>
+                <div class="font-bold text-sm">农机车载终端</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                </div>
+                <div class="font-bold text-sm">墒情监测站</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div class="font-bold text-sm">智能阀控制器</div>
+            </div>
+            <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="font-bold text-sm">边缘计算网关</div>
+            </div>
+             <div class="product-card transition-all p-6 bg-gray-50 rounded-2xl text-center border border-gray-100">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <div class="font-bold text-sm">无线传输模块</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="py-24 bg-section-gray">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+        <div>
+            <h2 class="text-3xl font-black mb-8">自研核心技术栈</h2>
+            <div class="space-y-10">
+                <div class="flex gap-6">
+                    <div class="w-1px h-16 bg-blue-200"></div>
+                    <div>
+                        <h4 class="font-bold mb-2">微服务架构</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">基于 Spring Cloud 工具链，实现系统组件的高度解耦与弹性扩容，支持海量物联网节点的高并发接入。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="w-1px h-16 bg-blue-200"></div>
+                    <div>
+                        <h4 class="font-bold mb-2">地理空间分析</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">深度集成 GIS (地理信息系统)，通过空间算法实现农田地块精准描画与文物分布热力制图。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="w-1px h-16 bg-blue-200"></div>
+                    <div>
+                        <h4 class="font-bold mb-2">时序大数据引擎</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">利用 TDengine/InfluxDB 存储环境监测历史数据，实现秒级毫秒级的数据查询与趋势研判分析。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary rounded-[32px] p-10 text-white shadow-2xl">
+            <h3 class="text-2xl font-bold mb-10">研发指标</h3>
+            <div class="space-y-8">
+                <div>
+                   <div class="flex justify-between mb-2 text-sm"><span class="opacity-70">响应时延</span><span class="font-bold"> &lt; 100ms </span></div>
+                   <div class="h-1 bg-white/20 rounded-full"><div class="h-full bg-accent rounded-full w-[95%]"></div></div>
+                </div>
+                <div>
+                   <div class="flex justify-between mb-2 text-sm"><span class="opacity-70">系统年度可用率</span><span class="font-bold"> 99.99% </span></div>
+                   <div class="h-1 bg-white/20 rounded-full"><div class="h-full bg-accent rounded-full w-[99%]"></div></div>
+                </div>
+                <div>
+                   <div class="flex justify-between mb-2 text-sm"><span class="opacity-70">自主研发代码比例</span><span class="font-bold"> 100% </span></div>
+                   <div class="h-1 bg-white/20 rounded-full"><div class="h-full bg-accent rounded-full w-full"></div></div>
+                </div>
+            </div>
+            <div class="mt-12 flex items-center gap-4">
+                <div class="text-4xl font-black">102</div>
+                <div class="text-[10px] leading-tight opacity-70 uppercase font-bold tracking-widest text-left">软件著作权<br/>授权积累 (件)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-bg py-10 text-gray-400 text-center text-[10px] uppercase font-bold tracking-widest">
+    湖北智耘信息技术有限公司 | 武汉·前程中心
+</footer>
+
+</body>
+</html>
