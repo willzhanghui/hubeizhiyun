@@ -22,6 +22,7 @@
             }
         }
     </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .hero-immersive {
             background-size: cover;
@@ -44,6 +45,18 @@
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 200,
+        });
+    });
+</script>
 
 <!-- HEADER -->
 <header class="bg-white shadow-sm sticky top-0 z-50 h-[72px] border-b border-border-light">
@@ -82,50 +95,152 @@
 </div>
 
 <!-- AGRICULTURE SECTION -->
-<section id="agriculture" class="py-24 bg-white">
+<section id="agriculture" class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row gap-16 items-start">
-            <div class="md:w-1/3 sticky top-36">
-                <span class="text-green-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Agriculture</span>
-                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧农业综合方案</h2>
-                <p class="text-gray-500 text-sm leading-loose mb-8">
-                    面向高标准农田建设与管理的生命周期，提供从数据采集、分析处理到决策支持的一站式信息化解决方案。助力农业生产从“经验判断”向“科学决策”转化。
-                </p>
-                <div class="bg-green-50 p-6 rounded-2xl">
-                    <h5 class="font-bold text-green-800 text-sm mb-4">四大核心优势</h5>
-                    <ul class="space-y-3 text-xs text-green-700">
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 高精度：北斗厘米级农机作业</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 全覆盖：空天地一体化实时监测</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 低耗：精准灌溉与减药增效</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 闭环：种子到餐桌的全链条溯源</li>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-green-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Agriculture Ecosystem</span>
+            <h2 class="text-4xl font-black text-[#001a4d] mb-6">智慧农业综合方案</h2>
+            <p class="text-gray-500 max-w-3xl mx-auto">整合“空天地”监测网络，构建从数字化地块到无人化耕助的全链条数智底座。</p>
+        </div>
+
+        <!-- System Showcase -->
+        <div class="space-y-32">
+            <!-- 1. GIS Platform -->
+            <div class="flex flex-col md:flex-row items-center gap-16" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-green-100 rounded-[40px] opacity-50 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-gray-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/ag-gis.png" alt="农业GIS应用系统" class="w-full h-auto" referrerPolicy="no-referrer">
+                            <!-- Data Overlay Simulation -->
+                            <div class="absolute bottom-6 left-6 right-6 bg-black/60 backdrop-blur-md p-4 rounded-xl text-white flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span class="text-xs font-bold">实时环境数据监测：21.0℃ / 89.2% RH</span>
+                                <span class="text-[10px] bg-green-500 px-2 py-1 rounded animate-pulse">LIVE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A2 2 0 013 15.485V4.704a2 2 0 012.894-1.789L9 4.105m0 15.895l5.553-2.776A2 2 0 0015 15.415V4.686a2 2 0 00-2.894-1.732L9 4.105m0 15.895V4.105m0 15.895l5.553-2.776"></path></svg>
+                        数字化地理信息平台
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">农业GIS应用系统</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        该系统是产业基地的数字化地理信息核心引擎。通过高精度地图渲染，直观展示全县/全镇产业总览，包含基地总数、产业类型、总面积及在线设备状态。支持地块详情下沉，实时关联传感器数据（温湿度、CO2、光照等）与生产车间监控，实现“一张图”全域管护。
+                    </p>
+                    <ul class="grid grid-cols-2 gap-4 text-sm font-bold text-[#001a4d]">
+                        <li class="flex items-center gap-2 italic">● 厘米级数字底图</li>
+                        <li class="flex items-center gap-2 italic">● 生产监控实时联动</li>
+                        <li class="flex items-center gap-2 italic">● 环境指数异常告警</li>
+                        <li class="flex items-center gap-2 italic">● 基地规模量化分析</li>
                     </ul>
                 </div>
             </div>
-            <div class="md:w-2/3 grid gap-6">
-                <!-- Systems from PDF -->
-                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">现代农业园区管理系统</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        以数据驾驶舱为核心，整合园区概览、四情监测（气象/虫情/墒情/苗情）、作物长势遥感监测。支持NDVI植被指数分析、生育期智能判断。
-                    </p>
+
+            <!-- 2. Dashboard -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-blue-100 rounded-[40px] opacity-50 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-gray-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/ag-dashboard.png" alt="综合驾驶舱" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
                 </div>
-                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">智能无人农机管理系统</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        基于北斗/GPS高精度定位，实现农机作业路径规划、无人驾驶任务编排、作业面积自动计算、工况实时监测与远程控制。
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        综合管控驾驶舱
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">高标准农田建设驾驶舱</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        构建“智慧农田云脑”，对试点项目进行全方位监测。系统集成地块分布总览地图与实时监控，智能统计种植结构分析、月度产量趋势。通过气象预警、病虫害风险评估以及传感器状态监测，为农业减药、提质、增产提供量化决策支撑。
                     </p>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center p-4 bg-gray-50 rounded-xl">
+                            <div class="text-xl font-black text-primary">32%</div>
+                            <div class="text-[10px] text-gray-400 uppercase mt-1">节水效率提升</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-xl">
+                            <div class="text-xl font-black text-primary">18.5%</div>
+                            <div class="text-[10px] text-gray-400 uppercase mt-1">粮食产能提升</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-xl">
+                            <div class="text-xl font-black text-primary">85%</div>
+                            <div class="text-[10px] text-gray-400 uppercase mt-1">农机作业率</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">农事生产与溯源管理系统</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        覆盖全生命周期的农事档案、任务闭环、批次追溯。关联从种子采购、田间管理到包装销售的每一个环节，实现“扫码即查”。
-                    </p>
+            </div>
+
+            <!-- 3. Machinery -->
+            <div class="flex flex-col md:flex-row items-center gap-16" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-gray-200 rounded-[40px] opacity-30 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-[#050B15] rounded-[32px] shadow-2xl overflow-hidden border border-gray-800 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/ag-machinery.png" alt="智能无人农机管理" class="w-full h-auto opacity-90" referrerPolicy="no-referrer">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ag-card bg-gray-50 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">农业大数据分析与咨询服务</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        汇聚土壤、气象等多源异构数据，提供肥力分级、气象历史对比、农技知识库在线问答等深度分析能力。
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        智能无人农机管理
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">北斗/GPS农机精准管控</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        基于高精度定位技术，系统可对无人插秧机、无人植保机、无人收割机进行实时轨迹渲染与作业看板监测。支持远程点火/熄火控制及紧急安全制动，核心解决“谁来种田”和“如何精细化作业”的产业转型题。
                     </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm">作业轨迹实时渲染与历史回放</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm">多终端远程指令协同与实时监控</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm">作业面积自动核算与计能效分析</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4. Consultation -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-cyan-100 rounded-[40px] opacity-50 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-gray-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/ag-expert.png" alt="农业技术咨询服务" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2m16-10a4 4 0 11-8 0 4 4 0 018 0zM9 11a4 4 0 100-8 4 4 0 000 8z"></path></svg>
+                        专家咨询服务系统
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">农业技术在线支撑平台</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        打破物理空间壁垒，通过“在线互动+知识库检索”，为经营主体提供及时的技术支撑。平台汇聚作物选种、植保咨询、土壤肥料、大数据分析等多领域资深专家，支持待办问题闭环追踪与服务质量管理。
+                    </p>
+                    <div class="flex items-center gap-8">
+                        <div>
+                            <div class="text-2xl font-black text-primary">24+</div>
+                            <div class="text-[10px] text-gray-400 uppercase">签约专家团队</div>
+                        </div>
+                        <div class="w-px h-10 bg-gray-200"></div>
+                        <div>
+                            <div class="text-2xl font-black text-primary">4.9/5</div>
+                            <div class="text-[10px] text-gray-400 uppercase">农户满意评分</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,52 +248,143 @@
 </section>
 
 <!-- MUSEUM SECTION -->
-<section id="museum" class="py-24 bg-section-gray">
+<section id="museum" class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row-reverse gap-16 items-start">
-            <div class="md:w-1/3 sticky top-36">
-                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Museum</span>
-                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧文博解决方案</h2>
-                <div class="w-12 h-1 bg-accent mb-6"></div>
-                <p class="text-gray-900 font-bold text-lg mb-4 italic">让千年文物 在数字时代焕发新生</p>
-                <p class="text-gray-500 text-sm leading-loose mb-8">
-                    湖北智耘以“实时感知、精准引导、科学决策”为核心理念，构建覆盖游客、管理、统计、移动端的一站式整体解决方案，推动博物馆从“经验运营”迈向“数据运营”。
-                </p>
-                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="p-2 bg-blue-600 rounded-lg text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/></svg>
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Museum Heritage</span>
+            <h2 class="text-4xl font-black text-[#001a4d] mb-6">智慧文博解决方案</h2>
+            <div class="w-24 h-1.5 bg-blue-600 mx-auto mb-6 rounded-full"></div>
+            <p class="text-gray-900 font-bold text-lg italic mb-4">让千年文物 在数字时代焕发新生</p>
+            <p class="text-gray-500 max-w-3xl mx-auto">以“实时感知、精准引导、科学决策”为核心，推动博物馆从“经验运营”迈向“数据运营”。</p>
+        </div>
+
+        <!-- System Showcase -->
+        <div class="space-y-32">
+            <!-- 1. Passenger Dashboard -->
+            <div class="flex flex-col md:flex-row items-center gap-16" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-blue-50 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-blue-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/museum-client.png" alt="客流展示大屏 (游客端)" class="w-full h-auto" referrerPolicy="no-referrer">
+                            <!-- Overlay -->
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-900/40 to-transparent h-1/2 pointer-events-none"></div>
                         </div>
-                        <h5 class="font-bold text-blue-800 text-sm text-left">标杆案例</h5>
                     </div>
-                    <p class="text-xs text-blue-700 leading-loose">
-                        我们为<span class="font-bold text-blue-900">某国家一级博物馆</span>打造了智能客流统计系统，实现三馆一体化覆盖与统一平台化管理。
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        公共信息展示窗口
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">客流展示大屏 (游客端)</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        采用文博清雅风格，将传统美学与现代数据可视化深度融合。实时滚动显示入馆总数、在馆人数与参观舒适度，智能分析各展厅热力分布，有效引导游客错峰参观，显著改善参观体验。
                     </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                            <span>清雅艺术化视觉UI设计</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                            <span>实时入馆流量动态刷新</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                            <span>多级舒适度指标预估</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:w-2/3 grid gap-6">
-                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">客流展示大屏 (游客端)</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        采用文博清雅风格，将传统美学与现代数据可视化深度融合。实时滚动显示入馆总数、在馆人数与参观舒适度，引导游客错峰参观，改善体验。
-                    </p>
+
+            <!-- 2. Management Dashboard -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-indigo-50 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-indigo-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/museum-admin.png" alt="客流安全监控大屏 (管理端)" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">客流安全监控大屏 (管理端)</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        数字指挥舱式设计，一屏掌握全馆瞬时流量、预警状态与分厅详情。深度联动视频监控，实现秒级应急响应，保障场馆与文物安全。
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        数字指挥舱引擎
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">客流安全监控大屏 (管理端)</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        “数字指挥舱”式交互设计，一屏掌握全馆瞬时流速、重点区域压力预警与分厅停留详情。深度联动馆内AI摄像头与红外感测，实现秒级应急调度响应，全方位保障场馆运营有序与文物绝对安全。
                     </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-indigo-50/50 rounded-xl border border-indigo-100">
+                            <div class="text-xs text-indigo-500 uppercase font-bold mb-1">瞬时响应</div>
+                            <div class="text-xl font-black text-[#001a4d]">≤ 3s</div>
+                        </div>
+                        <div class="p-4 bg-indigo-50/50 rounded-xl border border-indigo-100">
+                            <div class="text-xs text-indigo-500 uppercase font-bold mb-1">监控覆盖率</div>
+                            <div class="text-xl font-black text-[#001a4d]">100%</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">统计分析与运营数据看板</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        提供多维统计分析，支持按日/周/月自动化报表。基于AI算法提供客流预测、游客画像及展厅关注度分析，为陈列优化与决策提供依据。
+            </div>
+
+            <!-- 3. Stats Dashboard -->
+            <div class="flex flex-col md:flex-row items-center gap-16" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-cyan-50 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-cyan-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/museum-stats.png" alt="统计分析与运营数据看板" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                        多维运营看板
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">客流统计分析与运营看板</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        集成“数据看板V2.0”，系统可自动呈现近7日各展厅（如越王剑馆、楚文化馆、丝织品馆等）的客流量对比及空间分布。基于时空大数据模型，提供未来7天客流趋势精准预测，为博物馆排班、活动推广及陈列优化提供科学支撑。
                     </p>
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold text-gray-500 uppercase">精准游客画像</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 00-1-1H6zm3 2h2v2H9V4zm4 2V4h1v2h-1zm-5 2v2H6V8h2zm4 0v2h-2V8h2zm2 0v2h-2V8h2z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <span class="text-xs font-bold text-gray-500 uppercase">自动化报表推送</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">移动端微信小程序</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        连接游客私域触点，提供入馆前预约、入馆中导览、入馆后服务的全链路移动体验。支持实客流查看、智能导引推送与在线文创展示。
+            </div>
+
+            <!-- 4. Mini Program -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-blue-100 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-blue-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/museum-mini.png" alt="移动端微信小程序" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        私域服务触点
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">全场景移动导览小程序</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        无缝衔接微信生态，为游客提供“入馆前预约、入馆中导引、离馆后文创”的一站式全链路体验。支持在线语音讲解、AR文物互动、实时拥挤度查询及智能参观路线推荐。
                     </p>
                 </div>
             </div>
@@ -186,34 +392,104 @@
     </div>
 </section>
 
+
 <!-- TOURISM SECTION -->
-<section id="tourism" class="py-24 bg-white">
+<section id="tourism" class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row gap-16 items-start">
-            <div class="md:w-1/3 sticky top-36">
-                <span class="text-orange-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Culture & Tourism</span>
-                <h2 class="text-3xl font-black text-[#001a4d] mb-6">智慧文旅解决方案</h2>
-                <p class="text-gray-500 text-sm leading-loose mb-8">
-                    构建全域旅游数字化综合管理服务平台。解决景区“看不住、管不好、卖不响”的痛点，打造沉浸式智慧旅游新地标。
-                </p>
-            </div>
-            <div class="md:w-2/3 grid gap-6">
-                <div class="ly-card bg-orange-50/30 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">景区大数据指挥调度中心</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        整合监控视频、GIS地图、应急调度、停车诱导、火情监测于一体的“全景式”大屏看板。支持一键广播、远程巡更。
-                    </p>
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-orange-600 font-bold uppercase tracking-widest text-xs mb-4 block">Smart Culture & Tourism</span>
+            <h2 class="text-4xl font-black text-[#001a4d] mb-6">智慧文旅解决方案</h2>
+            <div class="w-24 h-1.5 bg-orange-600 mx-auto mb-6 rounded-full"></div>
+            <p class="text-gray-900 font-bold text-lg italic mb-4">重塑产游价值链 打造数字旅新标杆</p>
+            <p class="text-gray-500 max-w-3xl mx-auto">构建全域旅游数字化综合管理服务平台，解决景区“看不住、管不好、卖不响”的痛点，打造沉浸式智慧旅游新地标。</p>
+        </div>
+
+        <!-- System Showcase -->
+        <div class="space-y-32">
+            <!-- 1. Management Center -->
+            <div class="flex flex-col md:flex-row items-center gap-16" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-orange-50 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-orange-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/wl_admin.png" alt="景区大数据指挥调度中心" class="w-full h-auto" referrerPolicy="no-referrer">
+                            <!-- Glow effect -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-orange-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ly-card bg-orange-50/30 p-8 rounded-2xl">
-                    <h4 class="font-bold text-lg mb-4 text-[#001a4d]">一机游全域智旅平台</h4>
-                    <p class="text-sm text-gray-500 leading-loose">
-                        赋能B端景区与C端游客。包含攻略导览、扫码购票、智能客服、评价反馈。通过数据漏斗分析游客画像，实现精准营销。
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        数字化指挥大脑
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">景区大数据指挥调度中心</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        整合全域监控视频、多尺度GIS地图、应急资源调度、智能停车诱导及森林火情实时监测于一体。通过“全景式”大屏看板，实现对景区运行状态的秒级敏捷感知与精准运营管控，构建可视化景区安防指挥体系。
                     </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                            <span class="text-sm font-bold text-gray-700">应急一键广播</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                            <span class="text-sm font-bold text-gray-700">北斗巡更闭环</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
+                            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                            <span class="text-sm font-bold text-gray-700">AI客流预警</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Consumer Platform -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-orange-100/50 rounded-[40px] opacity-70 group-hover:opacity-100 transition duration-500 scale-95 group-hover:scale-100"></div>
+                        <div class="relative bg-white rounded-[32px] shadow-2xl overflow-hidden border border-orange-100 transition-transform duration-700 hover:scale-[1.05]">
+                            <img src="/wl_clint.png" alt="一机游全域智旅平台" class="w-full h-auto" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        全域漫游旅伴
+                    </div>
+                    <h3 class="text-3xl font-black text-[#001a4d] mb-6 leading-tight">一机游全域智旅平台</h3>
+                    <p class="text-gray-600 leading-[1.8] mb-8">
+                        深度赋能管理端与游客端。为游客提供“入馆前预约、入馆中导引、离馆后文创”的一站式全链路体验。集成AI智能导览、手绘地图、码上购票及投诉反馈系统，通过数据漏斗深度萃取游前-游中-游后画像，实现景区资产的高效盘活。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#001a4d] text-sm mb-1">私域流量深度沉淀</h5>
+                                <p class="text-xs text-gray-500">通过社交媒体触点，构建景区自有的数字化会员营销体系。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#001a4d] text-sm mb-1">多维画像精准画像</h5>
+                                <p class="text-xs text-gray-500">基于消费路径与游览轨迹，提供千人千面的精细化运营建议。</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer class="footer-bg pt-10 pb-10 text-gray-400 text-center text-xs">

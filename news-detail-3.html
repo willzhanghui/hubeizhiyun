@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 - 智耘科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0047AB', 'primary-dark': '#0A2540', 'border-light': '#E1E8ED' },
+                    fontFamily: { sans: ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="bg-white shadow-sm border-b border-border-light h-[72px] flex items-center px-12 sticky top-0 z-50">
+        <a href="news.html" class="flex items-center gap-2 text-primary font-bold text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+            返回新闻列表
+        </a>
+    </header>
+    <main class="max-w-4xl mx-auto py-20 px-6">
+        <article class="bg-white p-8 md:p-16 rounded-[40px] shadow-sm border border-gray-100">
+            <div class="flex items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">
+                <span>Project Case</span>
+                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                <span>2025-06-15</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-black text-primary-dark mb-12 leading-tight">标杆驱动！安陆市信息化集成管理平台顺利通过农业部门专家组阶段性验收</h1>
+            <div class="aspect-video bg-gray-100 rounded-[32px] mb-12 overflow-hidden shadow-inner flex items-center justify-center">
+                <img src="/public/news_anlu_accept.jpg" alt="验收现场" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+            </div>
+            <div class="prose prose-sm md:prose-base max-w-none text-gray-600 leading-[2] space-y-8 text-justify">
+                <p>安陆市辛榨乡高标准农田示范基地日前迎来了一场关键性的“大考”。由湖北智耘信息技术有限公司分承建的“安陆市高标准农田信息化集成管理平台”顺利通过了由安陆市农业农村局组织的专家组阶段性验收，获得了一致好评。</p>
+                <p>在验收现场，智耘科技技术团队展示了已上线的 13 个功能模块。专家组重点考察了<strong>实时墒情监测系统</strong>、<strong>北斗导航精准播种模块</strong>以及<strong>病虫害自动化预警中心</strong>。通过部署在农田里的高精度传感器，管理人员足不出户即可在手机终端查看土壤养分、水分及作物长势，实现了从“靠天吃饭”到“科技护航”的转变。</p>
+                <p>验收总结要点：</p>
+                <ul class="list-disc pl-5 space-y-4">
+                    <li><strong>集成度高</strong>：平台打破了以往各部门数据“烟囱”，实现了“一图统揽全局”。</li>
+                    <li><strong>交互性强</strong>：移动端小程序操作简便，基层农技人员与农户能够快速上手使用。</li>
+                    <li><strong>示范性强</strong>：作为安陆市乃至全省高标准农田建设的标杆，该项目的验收通过具有极佳的推广价值。</li>
+                </ul>
+                <p>安陆市相关领导表示：“该平台的投入使用，极大提升了我们高标准农田的后期运营效率。智耘科技在项目实施过程中体现出的专业度与响应速度，为后续深层次合作奠定了基础。”</p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
